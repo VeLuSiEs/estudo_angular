@@ -40,7 +40,7 @@ export class HomeComponent {
       name: 'A113 Transitional Housing',
       city: 'Santa Monica',
       state: 'CA',
-      photo: '/assets/referee.svg',
+      photo: '/assets/referee.png',
       availableUnits: 0,
       wifi: false,
       laundry: true,
