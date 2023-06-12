@@ -7,7 +7,7 @@ import { HousingLocationComponent } from './housing-location/housing-location.co
   selector: 'app-root',
   standalone: true,
   imports: [HomeComponent, RouterModule],
-  // Seleciona o URL do template do component
+  // Implementa template do component
   template: `
   <main>
     <a [routerLink]="['/']">
@@ -19,6 +19,7 @@ import { HousingLocationComponent } from './housing-location/housing-location.co
       <router-outlet></router-outlet>
     </section>
   </main>`,
+  // Indica o URL do .CSS do component
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {

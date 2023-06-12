@@ -5,13 +5,19 @@ import { HousingLocation } from './housinglocation';
   providedIn: 'root',
 })
 export class HousingService {
+  submitApplication(firstName: string, lastName: string, email: string) {
+    console.log(
+      `A Aplicação Homes recebeu: Primeiro Nome: ${firstName}, Último Nome: ${lastName}, email: ${email}.`
+    );
+  }
+
   housingLocationList: HousingLocation[] = [
     {
       id: 0,
       name: 'Acme Fresh Start Housing',
       city: 'Chicago',
       state: 'IL',
-      photo: '/assets/refer.png',
+      photo: '/assets/casa.png',
       availableUnits: 4,
       wifi: true,
       laundry: true,
@@ -21,7 +27,7 @@ export class HousingService {
       name: 'A113 Transitional Housing',
       city: 'Santa Monica',
       state: 'CA',
-      photo: '/assets/refer.png',
+      photo: '/assets/casa.png',
       availableUnits: 0,
       wifi: false,
       laundry: true,
@@ -31,7 +37,7 @@ export class HousingService {
       name: 'Warm Beds Housing Support',
       city: 'Juneau',
       state: 'AK',
-      photo: '/assets/refer.png',
+      photo: '/assets/casa.png',
       availableUnits: 1,
       wifi: false,
       laundry: false,
@@ -41,7 +47,7 @@ export class HousingService {
       name: 'Homesteady Housing',
       city: 'Chicago',
       state: 'IL',
-      photo: '/assets/refer.png',
+      photo: '/assets/casa.png',
       availableUnits: 1,
       wifi: true,
       laundry: false,
@@ -51,7 +57,7 @@ export class HousingService {
       name: 'Happy Homes Group',
       city: 'Gary',
       state: 'IN',
-      photo: '/assets/refer.png',
+      photo: '/assets/casa.png',
       availableUnits: 1,
       wifi: true,
       laundry: false,
@@ -61,7 +67,7 @@ export class HousingService {
       name: 'Hopeful Apartment Group',
       city: 'Oakland',
       state: 'CA',
-      photo: '/assets/refer.png',
+      photo: '/assets/casa.png',
       availableUnits: 2,
       wifi: true,
       laundry: true,
@@ -71,7 +77,7 @@ export class HousingService {
       name: 'Seriously Safe Towns',
       city: 'Oakland',
       state: 'CA',
-      photo: '/assets/refer.png',
+      photo: '/assets/casa.png',
       availableUnits: 5,
       wifi: true,
       laundry: true,
@@ -81,7 +87,7 @@ export class HousingService {
       name: 'Hopeful Housing Solutions',
       city: 'Oakland',
       state: 'CA',
-      photo: '/assets/refer.png',
+      photo: '/assets/casa.png',
       availableUnits: 2,
       wifi: true,
       laundry: true,
@@ -91,7 +97,7 @@ export class HousingService {
       name: 'Seriously Safe Towns',
       city: 'Oakland',
       state: 'CA',
-      photo: '/assets/refer.png',
+      photo: '/assets/casa.png',
       availableUnits: 10,
       wifi: false,
       laundry: false,
@@ -101,7 +107,7 @@ export class HousingService {
       name: 'Capital Safe Towns',
       city: 'Portland',
       state: 'OR',
-      photo: '/assets/refer.png',
+      photo: '/assets/casa.png',
       availableUnits: 6,
       wifi: true,
       laundry: true,
