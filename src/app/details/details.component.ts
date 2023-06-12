@@ -27,12 +27,12 @@ import { HousingLocation } from '../housinglocation';
     </section>
     <section class="listing-apply">
       <br><br>
-      <h2 class="section-heading">Apply now to live here</h2>
+      <h2 class="section-heading">Dúvidas? Nós contactamos...</h2>
       <form [formGroup]="applyForm" (submit)="submitApplication()">
-        <label for="first-name">First Name</label>
+        <label for="first-name">Nome</label>
         <input id="first-name" type="text" formControlName="firstName">
 
-        <label for="last-name">Last Name</label>
+        <label for="last-name">Apelido</label>
         <input id="last-name" type="text" formControlName="lastName">
 
         <label for="email">Email</label>
